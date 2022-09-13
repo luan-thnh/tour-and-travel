@@ -1,7 +1,17 @@
-window.addEventListener('scroll', () => {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    const arr = document.querySelectorAll("#myImg");
+const menu = document.querySelector('.app-nav');
+const btnMenu = document.querySelector('.nav__icons');
 
-    arr.forEach(el => el.classList.add('slideUp'));
-  }
+btnMenu.addEventListener('click', () => {
+  menu.classList.toggle('show');
+  btnMenu.classList.toggle('active');
 });
+
+// if (window.screen.width <= 739) {
+
+// }
+
+// const a = document.querySelectorAll('section');
+
+// a.forEach(e => {
+//   e.setAttribute('data-aos', 'fade-up');
+// });

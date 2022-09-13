@@ -16,11 +16,11 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
-    <title>Traveling</title>
+    <title>Tour & Travel</title>
   </head>
 
   <body>
-    <header id="header" class="header">
+    <header id="header" class="header" data-aos="fade-down">
       <nav id="navbar" class="nav">
         <div class="nav__logo">
           <a href="#" class="nav__logo-link"><img src="./img/logo.png" alt=""></a>
@@ -46,11 +46,35 @@
             <button class="btn btn--orange btn-register">Register</button>
           </div>
         </div>
+        <div class="app-nav">
+          <ul class="app-nav__menu">
+            <li class="menu__item">
+              <a href="#!" class="menu__link">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="#!" class="menu__link">Destinations</a>
+            </li>
+            <li class="menu__item">
+              <a href="#!" class="menu__link">About</a>
+            </li>
+            <li class="menu__item">
+              <a href="#!" class="menu__link">Partner</a>
+            </li>
+          </ul>
+          <div class="nav__btn">
+            <button class="btn btn--orange btn-login">Login</button>
+            <button class="btn btn--orange btn-register">Register</button>
+          </div>
+        </div>
+        <div class="nav__icons">
+          <div class="nav__icon"></div>
+        </div>
       </nav>
     </header>
 
+
     <div id="main">
-      <section id="explore" class="explore" data-aos="fade-right">
+      <section id="explore" class="explore" data-aos="fade-up">
         <div class="container">
           <div class="row">
             <div class="container__content">
@@ -109,7 +133,7 @@
         </div>
       </section>
 
-      <section id="the-world" class="the-world" data-aos="fade-left">
+      <section id="the-world" class="the-world" data-aos="fade-up">
         <div class="container">
           <div class="row row-reverse">
             <div class="container__content">
@@ -126,7 +150,7 @@
         </div>
       </section>
 
-      <section id="destinations" class="destinations" data-aos="fade-down">
+      <section id="destinations" class="destinations" data-aos="fade-up">
         <div class="row">
           <h3 class="heding">Featured destinations</h3>
           <button class="btn-text btn-text--orange">View all <i class="btn-icon fa-solid fa-chevron-right"></i></button>
@@ -134,28 +158,28 @@
 
         <div class="destinations__group">
           <div class="row">
-            <div class="picture-item">
+            <div class="picture-item" data-aos="zoom-in">
               <img src="./img/travel-1.jpg" alt="">
               <div class="text__box">
                 <h4 class="heading-second">Raja Ampat</h4>
                 <p class="text-second text">Indonesia</p>
               </div>
             </div>
-            <div class="picture-item">
+            <div class="picture-item" data-aos="zoom-in">
               <img src="./img/travel-2.jpg" alt="">
               <div class="text__box">
                 <h4 class="heading-second">Fanjingshan</h4>
                 <p class="text-second text">China</p>
               </div>
             </div>
-            <div class="picture-item">
+            <div class="picture-item" data-aos="zoom-in">
               <img src="./img/travel-3.jpg" alt="">
               <div class="text__box">
                 <h4 class="heading-second">Vevey</h4>
                 <p class="text-second text">Switzerland</p>
               </div>
             </div>
-            <div class="picture-item">
+            <div class="picture-item" data-aos="zoom-in">
               <img src="./img/travel-4.jpg" alt="">
               <div class="text__box">
                 <h4 class="heading-second">Skadar</h4>
@@ -166,7 +190,7 @@
         </div>
       </section>
 
-      <section id="guides" class="guides" data-aos="fade-right">
+      <section id="guides" class="guides" data-aos="fade-up">
         <div class="container">
           <div class="row">
             <div class="container__content">
@@ -183,11 +207,11 @@
         </div>
       </section>
 
-      <section id="testimonials" class="testimonials">
+      <section id="testimonials" class="testimonials" data-aos="fade-up">
         <div class="container">
-          <h3 class="heading mb-43" data-aos="fade-down">Testimonials</h3>
+          <h3 class="heading mb-43">Testimonials</h3>
           <div class="row">
-            <div class="container__content" data-aos="fade-left">
+            <div class="container__content">
               <div class="icon-stars">
                 <i class="fa-solid fa-star icon-star"></i>
                 <i class="fa-solid fa-star icon-star"></i>
@@ -201,8 +225,8 @@
               <h4 class="heading-second heading-second--max">Edward Newgate</h4>
               <p class="text text-second text-second--max">Founder Circle</p>
             </div>
-            <div id="myImg" class="container__img" data-aos="fade-right">
-              <div class="picture-item picture-item--max float-right">
+            <div id="myImg" class="container__img">
+              <div class="picture-item picture-item--max float-right" data-aos="fade-up">
                 <img src="./img/man.jpg" alt="">
                 <div class="text__box text__box--right">
                   <i class="fa-solid fa-chevron-left icon-prev"></i>
@@ -214,15 +238,15 @@
         </div>
       </section>
 
-      <section id="stories" class="stories">
-        <div class="row" data-aos="fade-down">
+      <section id="stories" class="stories" data-aos="fade-up">
+        <div class="row">
           <h3 class="heding">Featured destinations</h3>
           <button class="btn-text btn-text--orange">View all <i class="btn-icon fa-solid fa-chevron-right"></i></button>
         </div>
 
-        <div class="destinations__group">
+        <div class="destinations__group" data-aos="fade-up">
           <div class="row">
-            <div class="card" data-aos="flip-left" data-aos-duration="2000">
+            <div class="card" data-aos="flip-left">
               <div class="card__img">
                 <img srcset="./img/trending-1.png 2x" alt="">
                 <div class="card__body">
@@ -238,7 +262,7 @@
                 </div>
               </div>
             </div>
-            <div class="card" data-aos="flip-left" data-aos-duration="2000">
+            <div class="card" data-aos="flip-left">
               <div class="card__img">
                 <img srcset="./img/trending-2.png 2x" alt="">
                 <div class="card__body">
@@ -252,7 +276,7 @@
                 </div>
               </div>
             </div>
-            <div class="card" data-aos="flip-left" data-aos-duration="2000">
+            <div class="card" data-aos="flip-left">
               <div class="card__img">
                 <img srcset="./img/trending-3.png 2x" alt="">
                 <div class="card__body">
@@ -266,7 +290,7 @@
                 </div>
               </div>
             </div>
-            <div class="card" data-aos="flip-left" data-aos-duration="2000">
+            <div class="card" data-aos="flip-left">
               <div class="card__img">
                 <img srcset="./img/trending-4.png 2x" alt="">
                 <div class="card__body">
@@ -380,9 +404,11 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
+        offset: 400,
         duration: 1000,
       });
     </script>
+    <script src="./script/main.js"></script>
   </body>
 
 </html>

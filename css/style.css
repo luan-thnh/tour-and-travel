@@ -163,10 +163,14 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+
 }
 
 body {
-  margin: 0 19rem;
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
   font-size: 1.6rem;
   box-sizing: border-box;
   color: var(--black-medium-color);
@@ -239,6 +243,10 @@ h3 {
 
 .nav__menu .menu__link:active {
   transform: translateY(0px);
+}
+
+.nav__btn {
+  display: flex;
 }
 
 .nav__btn .btn-login {
@@ -509,6 +517,7 @@ h3 {
 }
 
 .footer .footer__item:first-child .footer__link {
+  cursor: text;
   color: var(--black-dark-color);
   font-weight: 700;
   font-size: 1.8rem;
@@ -572,4 +581,99 @@ h3 {
 ::selection {
   color: #fff;
   background-color: rgba(35, 200, 134, 0.8);
+}
+
+/*  */
+.app-nav {
+  padding: 0 5.2rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(35, 200, 134);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+  transition: all 0.5s;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.app-nav.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.app-nav .app-nav__menu {
+  margin-top: 10.2rem;
+  list-style: none;
+}
+
+.app-nav__menu .menu__link {
+  display: inline-block;
+  padding: 3.2rem 0;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.app-nav .nav__btn {
+  margin-top: 3.2rem;
+}
+
+.nav__icons {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 8rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: fixed;
+  top: 1.6rem;
+  right: 1.6rem;
+  z-index: 6;
+}
+
+.nav__icon {
+  width: 4.5rem;
+  height: 0.6rem;
+  background-color: var(--orange-color);
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.nav__icon::after,
+.nav__icon::before {
+  position: absolute;
+  content: '';
+  width: 4.5rem;
+  height: 0.6rem;
+  background-color: var(--orange-color);
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+
+.nav__icon::before {
+  transform: translateY(-1.2rem);
+}
+
+.nav__icon::after {
+  transform: translateY(1.2rem);
+}
+
+.active .nav__icon {
+  transform: translateX(-5rem);
+  background-color: transparent;
+}
+
+.active .nav__icon::before {
+  transform: rotate(45deg) translate(3.5rem, -3.5rem);
+}
+
+.active .nav__icon::after {
+  transform: rotate(-45deg) translate(3.5rem, 3.5rem);
 }
