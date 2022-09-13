@@ -677,3 +677,51 @@ h3 {
 .active .nav__icon::after {
   transform: rotate(-45deg) translate(3.5rem, 3.5rem);
 }
+
+section {
+  position: relative;
+}
+
+.decorate {
+  position: absolute;
+}
+
+.plus-1 {
+  top: 0;
+  left: 40%;
+}
+
+.plus-2 {
+  top: 20rem;
+  left: 40%;
+}
+
+.plus-3 {
+  top: 50%;
+  left: 0;
+}
+
+.plus-4 {
+  bottom: 0;
+  left: 50%;
+}
+
+.circle-1 {
+  top: 50%;
+  left: -10rem;
+}
+
+.circle-2 {
+  width: 1.5rem;
+  bottom: -5rem;
+  right: 55%;
+}
+
+.circle-2 img {
+  width: 100%;
+}
+
+.circle-3 {
+  bottom: 25%;
+  right: 10rem;
+}
