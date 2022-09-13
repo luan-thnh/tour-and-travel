@@ -1,4 +1,8 @@
 @media (max-width: 46.1875em) {
+  html {
+    font-size: 56.25%;
+  }
+
   .row {
     flex-direction: column !important;
     align-items: center;
@@ -35,8 +39,26 @@
     padding: 0 !important;
   }
 
+  .explore__form {
+    text-align: center;
+  }
+
+  .explore__form .form__select-wrapper {
+    margin-right: 0;
+    max-width: 35rem;
+  }
+
+  .explore__form .form__title {
+    text-align: start;
+  }
+
+  .explore__form .form__control {
+    background-color: transparent;
+  }
+
   .picture-item {
     margin-top: 3.2rem;
+    height: 36.2rem;
   }
 
   .footer {
