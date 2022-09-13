@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Mulish&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Traveling</title>
+  </head>
+
+  <body>
+    <header id="header" class="header">
+      <nav id="navbar" class="nav">
+        <div class="nav__logo">
+          <a href="#" class="nav__logo-link"><img src="./img/logo.png" alt=""></a>
+        </div>
+
+        <div class="nav__right">
+          <ul class="nav__menu">
+            <li class="menu__item">
+              <a href="" class="menu__link">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Destinations</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">About</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Partner</a>
+            </li>
+          </ul>
+          <div class="nav__btn">
+            <button class="btn btn--orange btn-login">Login</button>
+            <button class="btn btn--orange btn-register">Register</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div id="main">
+      <section id="explore" class="explore" data-aos="fade-right">
+        <div class="container">
+          <div class="row">
+            <div class="container__content">
+              <h2 class="heading">Explore and
+                Travel</h2>
+              <form action="" class="explore__form">
+                <p class="form__title">Holiday finder</p>
+                <div class="row">
+                  <div class="form__select-wrapper">
+                    <select name="location" class="form__control">
+                      <option value="">Location</option>
+                      <option value="location-1">Indonesia</option>
+                      <option value="location-2">China</option>
+                      <option value="location-3">Switzerland</option>
+                      <option value="location-4">Montenegro</option>
+                    </select>
+                  </div>
+                  <div class="form__select-wrapper">
+                    <select name="activity" class="form__control">
+                      <option value="">Activity</option>
+                      <option value="activity-1">Hiking</option>
+                      <option value="activity-2">Star Gazing</option>
+                      <option value="activity-3">Fly-Fishing</option>
+                      <option value="activity-4">Camping</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form__select-wrapper">
+                    <select name="grade" class="form__control">
+                      <option value="">Grade</option>
+                      <option value="grade-1">Cooking</option>
+                      <option value="grade-2">Fishing</option>
+                      <option value="grade-3">Build camp</option>
+                      <option value="grade-4">Hiking</option>
+                    </select>
+                  </div>
+                  <div class="form__select-wrapper">
+                    <select name="date" class="form__control">
+                      <option value="">Date</option>
+                      <option value="date-1">13/09/2022</option>
+                      <option value="date-2">22/10/2022</option>
+                      <option value="date-3">05/02/2023</option>
+                      <option value="date-4">16/08/2023</option>
+                    </select>
+                  </div>
+                </div>
+                <button class="btn btn--orange btn-explore">Explore</button>
+              </form>
+
+            </div>
+            <div id="myImg" class="container__img">
+              <img src="./img/illustration-1.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="the-world" class="the-world" data-aos="fade-left">
+        <div class="container">
+          <div class="row row-reverse">
+            <div class="container__content">
+              <h3 class="heading">A new way to explore the world</h3>
+              <p class="text">For decades travellers have reached for Lonely Planet books when looking to plan and
+                execute their perfect
+                trip, but now, they can also let Lonely Planet Experiences lead the way</p>
+              <button class="btn btn--orange">Learn more</button>
+            </div>
+            <div id="myImg" class="container__img">
+              <img class="img__world" src="./img/illustration-2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="destinations" class="destinations" data-aos="fade-down">
+        <div class="row">
+          <h3 class="heding">Featured destinations</h3>
+          <button class="btn-text btn-text--orange">View all <i class="btn-icon fa-solid fa-chevron-right"></i></button>
+        </div>
+
+        <div class="destinations__group">
+          <div class="row">
+            <div class="picture-item">
+              <img src="./img/travel-1.jpg" alt="">
+              <div class="text__box">
+                <h4 class="heading-second">Raja Ampat</h4>
+                <p class="text-second text">Indonesia</p>
+              </div>
+            </div>
+            <div class="picture-item">
+              <img src="./img/travel-2.jpg" alt="">
+              <div class="text__box">
+                <h4 class="heading-second">Fanjingshan</h4>
+                <p class="text-second text">China</p>
+              </div>
+            </div>
+            <div class="picture-item">
+              <img src="./img/travel-3.jpg" alt="">
+              <div class="text__box">
+                <h4 class="heading-second">Vevey</h4>
+                <p class="text-second text">Switzerland</p>
+              </div>
+            </div>
+            <div class="picture-item">
+              <img src="./img/travel-4.jpg" alt="">
+              <div class="text__box">
+                <h4 class="heading-second">Skadar</h4>
+                <p class="text-second text">Raja Ampat</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="guides" class="guides" data-aos="fade-right">
+        <div class="container">
+          <div class="row">
+            <div class="container__content">
+              <h3 class="heading">Guides by Thousand
+                Sunny</h3>
+              <p class="text">Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and
+                Android) is the ultimate resource before and during a trip.</p>
+              <button class="btn btn--orange">Download</button>
+            </div>
+            <div id="myImg" class="container__img">
+              <img class="img__guides" src="./img/illustration-3.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="testimonials">
+        <div class="container">
+          <h3 class="heading mb-43" data-aos="fade-down">Testimonials</h3>
+          <div class="row">
+            <div class="container__content" data-aos="fade-left">
+              <div class="icon-stars">
+                <i class="fa-solid fa-star icon-star"></i>
+                <i class="fa-solid fa-star icon-star"></i>
+                <i class="fa-solid fa-star icon-star"></i>
+                <i class="fa-solid fa-star icon-star"></i>
+                <i class="fa-solid fa-star icon-star"></i>
+              </div>
+              <p class="text text-bold">“Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac
+                scelerisque eu, facilisis quis purus. Morbi blandit sit amet turpis nec”</p>
+
+              <h4 class="heading-second heading-second--max">Edward Newgate</h4>
+              <p class="text text-second text-second--max">Founder Circle</p>
+            </div>
+            <div id="myImg" class="container__img" data-aos="fade-right">
+              <div class="picture-item picture-item--max float-right">
+                <img src="./img/man.jpg" alt="">
+                <div class="text__box text__box--right">
+                  <i class="fa-solid fa-chevron-left icon-prev"></i>
+                  <i class="fa-solid fa-chevron-right icon-next"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="stories" class="stories">
+        <div class="row" data-aos="fade-down">
+          <h3 class="heding">Featured destinations</h3>
+          <button class="btn-text btn-text--orange">View all <i class="btn-icon fa-solid fa-chevron-right"></i></button>
+        </div>
+
+        <div class="destinations__group">
+          <div class="row">
+            <div class="card" data-aos="flip-left" data-aos-duration="2000">
+              <div class="card__img">
+                <img srcset="./img/trending-1.png 2x" alt="">
+                <div class="card__body">
+                  <h4 class="heading-second pt-22">The many benefits of
+                    taking a healing holiday</h4>
+                  <p class="text-second text pt-22">If there was a time to look for some self-relaxation, ‘me’ moments
+                    and
+                    solo vacations, it’s now. Courtesy the constant brouhaha of city life, the perennial work pressure,
+                    peer pressure and even biological pressures we deal with, we feel like a buzzer who should be
+                    pressed
+                    to release. Hence, mental health is affected in the rat race and that’s inevitable. </p>
+                  <button class="btn-text btn-text--orange pt-22">Read more</button>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-aos="flip-left" data-aos-duration="2000">
+              <div class="card__img">
+                <img srcset="./img/trending-2.png 2x" alt="">
+                <div class="card__body">
+                  <h4 class="heading-second pt-22">The best Kyoto restaurant
+                    to try Japanese food</h4>
+                  <p class="text-second text pt-22">Kyoto's cultural heritage as the ancient capital of Japan extends
+                    beyond its stunning temples and shrines to create a rich and sophisticated culinary tradition well
+                    worth exploring. From elegant kaiseki cuisine to imaginative tofu dishes and traditional tea and
+                    sweets, here’s our guide to the best places to eat in Kyoto.</p>
+                  <button class="btn-text btn-text--orange pt-22">Read more</button>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-aos="flip-left" data-aos-duration="2000">
+              <div class="card__img">
+                <img srcset="./img/trending-3.png 2x" alt="">
+                <div class="card__body">
+                  <h4 class="heading-second pt-22">Skip Chichen Itza and head
+                    to this remote Yucatan</h4>
+                  <p class="text-second text pt-22">The Maya have long awakened travelers’ curiosity on account of the
+                    many mysteries enshrouding this pre-Hispanic civilisation. For one thing, the city of Chichén Itzá
+                    in Mexico was abandoned by its inhabitants – seemingly without explanation – centuries before the
+                    Spaniards arrived at the shores that would one day become the Yucatán</p>
+                  <button class="btn-text btn-text--orange pt-22">Read more</button>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-aos="flip-left" data-aos-duration="2000">
+              <div class="card__img">
+                <img srcset="./img/trending-4.png 2x" alt="">
+                <div class="card__body">
+                  <h4 class="heading-second pt-22">Surf’s up at these beginner
+                    spots around the world</h4>
+                  <p class="text-second text pt-22">So firstly, you need to know what type of waves are good for
+                    learning to surf (as detailed here), then you need to learn how to predict when they will occur. Any
+                    free surf forecasting website will allow you to do this for your local surf spots. If you need more
+                    info on the spots in your area, get this awesome guidebook to surfing in New Zealand. It has them
+                    all, even a few secrets they probably shouldn’t have given away!</p>
+                  <button class="btn-text btn-text--orange pt-22">Read more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer id="footer" class="footer" data-aos="fade-down">
+      <div class="footer__category">
+        <div class="row">
+          <div class="col flex-1">
+            <div class="footer__logo">
+              <a href="#"><img src="./img/logo.png" alt=""></a>
+              <p class="text">Plan and book your perfect trip with
+                expert advice, travel tips destination
+                information from us</p>
+              <p class="text">©2020 Thousand Sunny. All rights reserved</p>
+            </div>
+          </div>
+          <div class="row flex-1-5">
+            <div class="col">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">Destinations</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">Africa</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">Antarctica</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">Asia</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">Europe</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">America</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">Shop</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">Destination Guides</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">Pictorial & Gifts</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">Special Offers</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">Delivery Times</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">FAQs</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">Interests</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">Adventure Travel</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">Art And Culture</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">Wildlife And Nature</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">Family Holidays</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">Food And Drink</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__social-media">
+        <a href="#!" class="footer__icon-link"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#!" class="footer__icon-link"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#!" class="footer__icon-link"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#!" class="footer__icon-link"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#!" class="footer__icon-link"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
+  </body>
+
+</html>
