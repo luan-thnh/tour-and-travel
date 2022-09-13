@@ -61,6 +61,10 @@
     height: 36.2rem;
   }
 
+  .picture-item--max {
+    height: 50rem;
+  }
+
   .footer {
     display: flex;
     flex-direction: column !important;
