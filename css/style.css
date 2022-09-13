@@ -224,6 +224,7 @@ h3 {
 }
 
 .nav__menu .menu__link {
+  display: inline-block;
   margin-right: 3.5rem;
   color: var(--menu-color);
   font-weight: 500;
@@ -234,6 +235,10 @@ h3 {
 .nav__menu .menu__link:hover {
   transform: translateY(-3px);
   color: var(--black-medium-color);
+}
+
+.nav__menu .menu__link:active {
+  transform: translateY(0px);
 }
 
 .nav__btn .btn-login {
@@ -542,4 +547,29 @@ h3 {
 
 .footer .footer__icon-link:not(:last-child) {
   margin-right: 3.5rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 1rem;
+  box-shadow: inset 0 0 5px var(--menu-color);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10rem;
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10rem;
+  background: rgba(251, 144, 29, 0.6);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(251, 144, 29, 0.8);
+}
+
+::selection {
+  color: #fff;
+  background-color: rgba(35, 200, 134, 0.8);
 }
