@@ -684,6 +684,7 @@ section {
 
 .decorate {
   position: absolute;
+  z-index: -999;
 }
 
 .plus-1 {
