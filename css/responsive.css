@@ -1,4 +1,10 @@
-@media (max-width: 46.1875em) {
+@media (min-width: 64em) and (max-width: 77.4375em) {
+  body {
+    width: 98.4rem;
+  }
+}
+
+@media (max-width: 63.9375em) {
   html {
     font-size: 56.25%;
   }
