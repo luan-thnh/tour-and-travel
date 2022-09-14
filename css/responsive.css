@@ -81,6 +81,10 @@
     padding-right: 0;
   }
 
+  .footer .footer__item:first-child {
+    margin-top: 6.2rem;
+  }
+
   .btn {
     margin-bottom: 3.2rem;
   }
