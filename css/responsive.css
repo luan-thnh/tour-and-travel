@@ -25,7 +25,8 @@
   }
 
   .app-nav,
-  .nav__icons {
+  .nav__icons,
+  .app-btn__text {
     display: flex;
   }
 
@@ -57,11 +58,12 @@
   }
 
   .picture-item {
-    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
     height: 36.2rem;
   }
 
   .picture-item--max {
+    margin-top: 3.2rem;
     height: 50rem;
   }
 

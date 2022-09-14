@@ -78,9 +78,17 @@
   width: calc(100%);
 }
 
+.btn-text__icon.btn-text:hover::after {
+  width: calc(100% + 1.2rem);
+}
+
 .btn-text--orange {
   color: var(--orange-color);
   background-color: transparent;
+}
+
+.app-btn__text {
+  display: none;
 }
 
 .btn-icon {
@@ -367,7 +375,7 @@ a {
 }
 
 .picture-item:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 3px -3px, rgba(0, 0, 0, 0.1) 6px -6px;
+  box-shadow: rgba(35, 200, 134, 0.3) 3px -3px, rgba(35, 200, 134, 0.1) 6px -6px;
   transform: translateY(-3px);
 }
 
@@ -415,6 +423,12 @@ a {
   height: 49.1rem;
   border-radius: 1.2rem;
 }
+
+.picture-item--max:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 4px -4px, rgba(0, 0, 0, 0.1) 8px -8px;
+  transform: translateY(-3px);
+}
+
 
 .icon-stars {
   padding-bottom: 3rem;
