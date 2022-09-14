@@ -83,12 +83,17 @@
     text-align: center;
   }
 
+  .footer .footer__category .row {
+    align-items: center;
+  }
+
+
   .footer .footer__logo {
-    padding-right: 0;
+    padding: 0 1.6rem;
   }
 
   .footer .footer__item:first-child {
-    margin-top: 6.2rem;
+    margin-top: 4.2rem;
   }
 
   .btn {
